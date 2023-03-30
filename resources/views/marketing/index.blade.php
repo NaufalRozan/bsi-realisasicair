@@ -41,7 +41,7 @@
                     <td>{{ number_format($item->Target, 0, ',', '.') }}</td>
                     <td><img src="{{ $item->photo ? asset('storage/photos/' . $item->photo) : 'https://sman93jkt.sch.id/wp-content/uploads/2018/01/765-default-avatar.png' }}" alt="User Photo" style="width: 100px; height: 100px; border-radius: 50%;"></td>
                     <td>
-                        <a href="/marketing/{{$item->id}}/edit" type="submit" class="btn yw-button">Edit</a>
+                        <a href="/marketing/{{$item->id}}/edit" type="submit" class="btn yw-button"><img src="https://img.icons8.com/material-rounded/24/FFFFFF/pencil--v1.png"/></a>
                     </td>
                 </tr>
                 @endforeach

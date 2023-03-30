@@ -1,7 +1,7 @@
 <footer>
   <div class="container d-flex flex-wrap justify-content-between align-items-center">
     <div class="col-md-4">
-      <span>&copy; 2023 Bank Syariah Indonesia</span>
+      <span>&copy; 2023 PT Bank Syariah Indonesia</span>
     </div>
   </div>
 </footer>

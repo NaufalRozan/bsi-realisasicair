@@ -73,8 +73,11 @@
                 padding: 10px;
             }
         }
-    </style>
 
+    </style>
+</head>
+
+<body>
     <div class="podium-container">
         <div class="podium-item" style="background-color: #C0C0C0;">
             <div class="podium-rank">2</div>
@@ -116,10 +119,7 @@
         </div>
 
     </div>
-
-
-    </body>
-
+</body>
 
 </html>
 @include('layouts.footer')

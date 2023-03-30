@@ -18,11 +18,11 @@
     @endif
 
     <div class="row">
-        <h1>DATA</h1>
+        <h1>Input Harian</h1>
         <div class="col-11 my-4" align="right">
             <!-- Button trigger modal -->
             <button class="blue-button" type="button" data-toggle="modal" data-target="#exampleModal">
-                Tambah Data
+                Input Data
             </button>
         </div>
 
@@ -40,13 +40,13 @@
         </form>
 
         <div id="running-text">
-            <marquee>Selamat Datang di Website Realisasi Pencairan</marquee>
+            <marquee>Selamat Datang di Monitoring Total Cair Marketing</marquee>
         </div>
 
         <div class="container mt-3">
             <div class="row">
                 <div class="col-12">
-                    <div id="table-wrapper" class="table-responsive">
+                    <div i  d="table-wrapper" class="table-responsive">
                         @if(isset($harian) && count($harian) > 0)
                         <table class="table table-bordered">
                             <thead>

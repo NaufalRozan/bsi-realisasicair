@@ -105,12 +105,21 @@ class DataController extends Controller
                 return $query->whereYear('tanggal', '=', $year);
             })
             ->when($month && $year, function ($query) {
-                return $query->select(DB::raw('DISTINCT users.name, users.Target'))
-                    ->sum('users.Target');
+                return $query->select('users.name', DB::raw('SUM(users.Target) as sum'))
+                    ->groupBy('users.name');
             }, function ($query) {
-                return $query->select(DB::raw('DISTINCT users.name, users.Target'))
-                    ->sum('users.Target') * 12;
-            });
+                return $query->select('users.name', DB::raw('SUM(users.Target) * 12 as sum'))
+                    ->groupBy('users.name');
+            })
+            ->first();
+
+        if ($totaltj) {
+            $totaltj = $totaltj->sum;
+        } else {
+            $totaltj = 0;
+        }
+
+
 
 
 

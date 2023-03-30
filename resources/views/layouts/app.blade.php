@@ -40,7 +40,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light stroke shadow-sm" style="background-color: #00a39d;">
             <div class="container">
-                <a class="navbar-brand navbar-logo" href="{{ url('/data') }}">
+                <a class="navbar-brand navbar-logo" href="{{ url('/harian') }}">
                     <img src="https://bsimobile.co.id/wp-content/uploads/2019/09/BSI_Horizontal-Logo_Multiple_Background_07012021-1.png" alt="Logo" width="150">
                 </a>
 
@@ -55,8 +55,8 @@
                                 CBRM
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a href="/data">Data CBRM</a>
                                 <a href="/harian">Input Data</a>
+                                <a href="/data">Data CBRM</a>
                                 <div class="dropdown-divider"></div>
                                 <a href="/grafik">Grafik CBRM</a>
                             </div>
